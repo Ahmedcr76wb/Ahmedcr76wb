@@ -9,6 +9,8 @@
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
         }
         .container {
             margin: 100px auto;
