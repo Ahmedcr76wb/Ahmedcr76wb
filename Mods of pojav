@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mods for Minecraft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .button {
+            background-color: #ffcc00;
+            border: none;
+            color: #000;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #ffd700;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <h1>أهم المودات في ماينكرافت</h1>
+    <p>اضغط على الزر أدناه للانتقال إلى قناتي، ومن ثم عرض المودات مباشرة:</p>
+    <a href="https://t.me/pojav_lanunchr" target="_blank" class="button" onclick="redirectToMods()">انضم إلى القناة</a>
+
+    <ul id="mods-list" style="display:none;">
+        <h2>أهم 20 مود:</h2>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/optifine" target="_blank">OptiFine</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/jei" target="_blank">Just Enough Items (JEI)</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/journeymap" target="_blank">JourneyMap</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty" target="_blank">Biomes O' Plenty</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest" target="_blank">The Twilight Forest</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/iron-chests" target="_blank">Iron Chests</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/mrcrayfishs-furniture-mod" target="_blank">MrCrayfish's Furniture Mod</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/tinkers-construct" target="_blank">Tinkers' Construct</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/gravestone-mod" target="_blank">Gravestone Mod</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/chisel" target="_blank">Chisel</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/pam-s-harvestcraft" target="_blank">Pam's HarvestCraft</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/fast-leaf-decay" target="_blank">Fast Leaf Decay</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/quark" target="_blank">Quark</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/waystones" target="_blank">Waystones</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap" target="_blank">Xaero's Minimap</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map" target="_blank">Xaero's World Map</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/ore-excavation" target="_blank">Ore Excavation</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/betterfps" target="_blank">BetterFPS</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/clumps" target="_blank">Clumps</a></li>
+        <li><a href="https://www.curseforge.com/minecraft/mc-mods/forestry" target="_blank">Forestry</a></li>
+    </ul>
+
+    <script>
+        function redirectToMods() {
+            // انتظر 3 ثوانٍ للسماح بفتح القناة
+            setTimeout(function() {
+                document.getElementById('mods-list').style.display = "block"; // إظهار قائمة المودات
+            }, 3000); // 3 ثوانٍ
+        }
+    </script>
+</body>
+</html>
