@@ -3,71 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اشترك للوصول إلى الرابط</title>
+    <title>روابط هاكات لماين كرافت</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
+            margin: 20px;
         }
-        .container {
-            margin: 100px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            max-width: 500px;
-        }
-        .btn {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-            display: inline-block;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-        .hidden {
+        #mods {
             display: none;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
         }
     </style>
-    <script>
-        let subscribed = false;
-
-        function visitChannel() {
-            alert("يجب عليك الاشتراك في القناة للوصول إلى الرابط.");
-            window.open("https://t.me/pojav_lanunchr", "_blank");
-            document.getElementById("verify-btn").classList.remove("hidden");
-        }
-
-        function verifySubscription() {
-            if (!subscribed) {
-                alert("لم يتم التحقق من الاشتراك. يرجى المحاولة مرة أخرى بعد الاشتراك.");
-            } else {
-                document.getElementById("download-link").classList.remove("hidden");
-                document.getElementById("verify-btn").classList.add("hidden");
-                alert("تم التحقق من الاشتراك! يمكنك الآن الوصول إلى الرابط.");
-            }
-        }
-
-        // محاكاة التحقق (للتجربة فقط)
-        setTimeout(() => {
-            subscribed = true; // يتم تغيير هذا عند الاشتراك الحقيقي.
-        }, 5000); // مؤقت 5 ثوانٍ
-    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>مرحباً بك!</h1>
-        <p>للوصول إلى الملف، يجب الاشتراك في قناتنا.</p>
-        <a class="btn" onclick="visitChannel()">اشترك الآن</a>
-        <a id="verify-btn" class="btn hidden" onclick="verifySubscription()">تحقق من الاشتراك</a>
-        <a id="download-link" class="btn hidden" href="https://www.curseforge.com/minecraft/modpacks/dreamcraft-new/files/5042444" target="_blank">الوصول إلى الملف</a>
+    <h1>روابط تحميل هاكات لماين كرافت</h1>
+    <p>للحصول على الروابط، اضغط أولاً على الزر أدناه لزيارة قناتي على تيليجرام.</p>
+    <button onclick="redirectToChannel()">ادخل للقناة</button>
+    <div id="mods">
+        <h2>روابط التحميل:</h2>
+        <ul>
+            <li><a href="https://aristois.net/download" target="_blank">تحميل Aristois</a></li>
+            <li><a href="https://impactclient.net/" target="_blank">تحميل Impact Client</a></li>
+            <li><a href="https://www.wurstclient.net/download/" target="_blank">تحميل Wurst Client</a></li>
+            <li><a href="https://meteorclient.com/" target="_blank">تحميل Meteor Client</a></li>
+            <li><a href="https://futureclient.net/" target="_blank">تحميل Future Client</a></li>
+            <li><a href="https://sigmaclient.info/" target="_blank">تحميل Sigma Client</a></li>
+            <li><a href="https://flux.today/" target="_blank">تحميل Flux Client</a></li>
+            <li><a href="https://liquidbounce.net/" target="_blank">تحميل LiquidBounce</a></li>
+            <li><a href="https://bleachhack.github.io/" target="_blank">تحميل BleachHack</a></li>
+            <li><a href="https://aresclient.org/" target="_blank">تحميل Ares Client</a></li>
+        </ul>
     </div>
+    <script>
+        function redirectToChannel() {
+            // توجه المستخدم إلى القناة
+            window.open("https://t.me/pojav_lanunchr", "_blank");
+            // بعد التأخير تظهر الروابط
+            setTimeout(() => {
+                document.getElementById('mods').style.display = 'block';
+            }, 3000); // 3 ثوانٍ قبل ظهور الروابط
+        }
+    </script>
 </body>
 </html>
